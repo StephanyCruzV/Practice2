@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Práctica 2: </title>
+	<link rel="stylesheet" href="animation.css">
+</head>
+<br>
+<body>
+	<div class="text" style="text-align: center; width:100%">
+	  <p>Práctica 2</p>
+	  <p>
+		<span class="word wisteria">Github.</span>
+    <span class="word wisteria">HTML.</span>
+		<span class="word belize">CSS.</span>
+		<span class="word pomegranate">JavaScript.
+	  </p>
+	</div>
+	<hr />
+  <br /><br />
+  
+  <head> Stephany Cruz</head>
+  <label>[A00824927]</label>
+  <br /><br/>
+
+	<label for="name">Name: </label><input type="text" id="name" name="name" placeholder="Enter your name" />
+	<button onclick="sayHello()">OK</button>
+	<br /><br />
+	
+  <script>
+  	function mostrar(id)
+ 		{
+    	var objeto=document.getElementById(id)
+      	objeto.style.display="block";
+    } 
+    
+    function ocultar(id)
+    {
+    	var objeto=document.getElementById(id)
+      	objeto.style.display="none";
+    }
+  </script>
+	
+  <style>
+    .oculto{display:none;}
+  </style>
+  
+  <br />
+  <h4> Mostrar Imágenes </h4>
+  <label> Selecciona la imagen que desees ver</label>
+  <form>
+    <input type="button" onclick="mostrar('contenido1') & ocultar('contenido2') & ocultar('contenido3')" value="Mostrar imagen 1">
+    <input type="button" onclick="mostrar('contenido2') & ocultar('contenido1') & ocultar('contenido3')" value="Mostrar imagen 2">
+    <input type="button" onclick="mostrar('contenido3') & ocultar('contenido1') & ocultar('contenido2')" value="Mostrar imagen 3">
+    <img src = "https://www.atv.pe/wp-content/uploads/2020/12/GATITOU-700x420.png" id="contenido1">
+    <img src = "https://www.lamega.cl/wp-content/uploads/2022/02/236641-800x515r1-etapas-desarrollo-gatitos.jpg" id="contenido2">
+    <img src = "https://galakia.com/wp-supercontent/uploads/2018/05/Que-debes-hacer-si-encuentras-cachorros-de-gatos-abandonados-600x350.jpg?x13578" id="contenido3">
+  </form>
+  
+</body>
+</html>
